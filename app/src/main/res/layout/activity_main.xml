@@ -7,8 +7,31 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textview_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/here_will_be_our_username"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/textview_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/here_will_be_our_password"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/textview_username"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Here will be our username" />
+        android:layout_below="@id/textview_password"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/open_dialog" />
 
 </RelativeLayout>
